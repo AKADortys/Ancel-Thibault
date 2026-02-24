@@ -1,5 +1,12 @@
+html {
+  scroll-behavior: smooth;
+}
 body {
-  background-color: #f8f9fa;
+  background-image: linear-gradient(rgba(248, 249, 250, 0.9), rgba(248, 249, 250, 0.9)), url('../images/computing_bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
   color: #334155;
   font-family:
     "Inter",
