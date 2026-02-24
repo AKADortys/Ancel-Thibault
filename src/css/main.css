@@ -27,3 +27,58 @@ body {
   color: #1e293b;
   letter-spacing: -0.025em;
 }
+/* Effet Floating Global */
+.card-skill,
+.card,
+.btn,
+.profile-img,
+.alert {
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Elévation des cartes au survol */
+.card-skill:hover,
+.card:hover {
+  transform: translateY(-8px); /* L'élément monte */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.08) !important; /* L'ombre s'agrandit */
+  border-color: #0d6efd !important; /* Optionnel : une légère bordure bleue */
+}
+
+/* Effet sur les boutons */
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(13, 110, 253, 0.2);
+}
+
+/* Effet sur la photo de profil */
+.profile-img:hover {
+  transform: scale(1.03) translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Animation douce pour les badges au survol */
+.badge-custom {
+  transition: transform 0.2s ease;
+}
+
+.badge-custom:hover {
+  transform: scale(1.1);
+  background-color: #0d6efd;
+  color: white;
+}
+
+/* Animation d'entrée pour donner un côté vivant au chargement */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container {
+  animation: fadeInUp 0.8s ease-out;
+}
