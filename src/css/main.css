@@ -1,0 +1,29 @@
+body {
+  background-color: #f8f9fa;
+  color: #334155;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+}
+.card-skill {
+  border: 1px solid #e2e8f0 !important;
+  background: #ffffff;
+  transition: transform 0.2s ease;
+}
+.card-skill:hover {
+  transform: translateY(-5px);
+}
+.badge-custom {
+  background-color: #f1f5f9;
+  color: #475569;
+  border: 1px solid #e2e8f0;
+  font-weight: 500;
+  padding: 0.5em 0.8em;
+}
+.section-header {
+  font-weight: 700;
+  color: #1e293b;
+  letter-spacing: -0.025em;
+}
